@@ -62,7 +62,7 @@ eg. O(n^3 + 1/2n + 1000), discard the constants (1000 in this case)
 Different Terms for Inputs:
 
 - if there are 2 sets of data, eg. 2 arrays, then we must have different terms for them
-(see Example 4)
+(see Time Complexity Example 4)
 
 - we can't just drop one of the inputs
 
