@@ -1,0 +1,7 @@
+Static Arrays
+
+- fixed in size, you need to specify the number of elements the array will hold ahead 
+of time
+
+- since array elements are stored sequentially in memory, there's no garuntee that
+you can't just keep adding things on sequentially 
