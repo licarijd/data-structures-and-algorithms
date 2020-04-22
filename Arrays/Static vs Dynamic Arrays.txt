@@ -3,5 +3,45 @@ Static Arrays
 - fixed in size, you need to specify the number of elements the array will hold ahead 
 of time
 
-- since array elements are stored sequentially in memory, there's no garuntee that
-you can't just keep adding things on sequentially 
+
+Static Array Operations
+
+lookup - O(1)
+
+push - O(1)
+
+insert - O(n)
+
+delete - O(n)
+
+
+Since array elements are stored sequentially in memory, there's no garuntee that
+you can't just keep adding things on sequentially. Static arrays solve this problem.
+
+
+Dynamic Arrays 
+
+- allow us to copy and rebuild an array at a new location with more available memory
+
+- JavaScript does this under the hood, whereas we'd have to manually copy the array to a 
+new array (new location in memory) in C++
+
+** This is why C++ is so fast; since we can control memory (unlike languages like JavaScript),
+we can really tweak things to be performant and memory-efficient
+
+- this result is that we don't need to define the arrays size beforehand
+
+
+Dynamic Array Operations 
+
+lookup - O(1)
+
+append - O(1), unless new memory needs to be allocated. If it does, then the array needs to 
+be recopied. In this case, the language needs to loop over all the items, and add the
+sequence to a new position in memory (usually, the language will double the allocated space
+when it needs to re-allocate). Thus, the runtime would be O(n) in the case of allocating new 
+memory.
+
+insert - O(n)
+
+delete - O(n)
