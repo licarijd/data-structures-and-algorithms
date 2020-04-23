@@ -23,3 +23,6 @@ Push - O(1)
 Insert - O(n)
 
 Delete - O(n)
+
+
+** Operations on strings are the same! Strings are simply arrays of characters.
