@@ -26,3 +26,19 @@ Delete - O(n)
 
 
 ** Operations on strings are the same! Strings are simply arrays of characters.
+
+** Arrays are awesome for having sorted data. When it comes to sorting, arrays are
+great because elements are stored sequentially in memory, according to thier index.
+
+
+Arrays are great:
+
+- for fast lookups
+- because of fast push/pop() (adding elements to the end, taking things out of the end of the array)
+- elements are ordered and stored sequentially in memory
+
+
+Arrays aren't great for:
+
+- inserts and deletes (all array elements after the insert/delete need to be shifted)
+- flexibility, due to their fixed size (if using static arrays)
