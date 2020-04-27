@@ -19,3 +19,6 @@ RAM the computer has.
 
 In most programming solutions, there's a tradeoff between space and memory.
 So if you want things to go faster, you may need more memory. And vice-versa.
+
+
+** To easily run JS code, use repl.it: https://repl.it/@licarijd/LoneExtraneousTrialsoftware
