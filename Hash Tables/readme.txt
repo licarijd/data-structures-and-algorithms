@@ -151,3 +151,33 @@ which can be found on the Wikipedia page: https://en.wikipedia.org/wiki/Hash_tab
 
 
 See "Hash tables in different languages"
+
+
+In summary, hash tables are great when you want quick access to certain values. 
+Hash tables search in O(1) time, where arrays need to loop through every item in 
+order to search (for example, you want to see if the string "Hello" exists in 
+an array). This is why hash tables are so popular in databases.
+
+Inserts are also very fast, in O(n) time. This is much more efficient than arrays 
+since arrays will need to shift the other elements after inserting something new.
+
+However, since there is no concept of order in hash tables, items are not places sequentially
+next to each other in memory (like arrays). This is one downside of hash tables. There's 
+also the innefficiency of key iteration (keys()) (See HashTable.js - we need to 
+iterate through the entire memory space).
+
+Arrays and hash tables both have fast lookups (for a hash table to have fast lookups, it needs
+good collision resolution). 
+
+Hash tables also have more flexibility with keys than arrays (keys can be various types).
+
+Hash tables are often used to improve time complexity (eg. remove nested loops), 
+but the O(1) access time benefit comes at the cost of more memory (space complexity).
+This is a very common pattern for using hash tables. Hash tables are usually the answer 
+to improving Time Complexity.
+
+** Note about Dictionaries in Python 
+
+Python has recently made dictionaries ordered by default. So there is less of a difference between
+Arrays and Hash Tables (Dictionaries).
+You can read more about it here: https://softwaremaniacs.org/blog/2020/02/05/dicts-ordered/en/
