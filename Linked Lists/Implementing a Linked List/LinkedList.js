@@ -105,19 +105,28 @@ class LinkedList {
         return currentNode
     }
 
+    // Common interview question
     reverse() {
         if (this.length <= 1) {
             return this
         }
 
+        // Start at the head
         let node = this.head
 
-        for (let i = 0; i < this.length - 1; i++) {
+        // Swap the current head with the nth item, where n is
+        // the iteration the loop is on (starting from 1)
+        while (node.next) {
           const nextNode = node.next
-          node.next = node.next.next
-          this.prepend(nextNode)
-          this.length--
+
+          // Remove pointer to nextNode
+          node.next = nextNode.next
+
+          // And prepend it instead (this code is in prepend())
+          nextNode.next = this.head
+          this.head = nextNode
         }
+        this.tail = node
         return this
     }
 }
@@ -133,6 +142,8 @@ const node1 = new Node(3)
 const node2 = new Node(8)
 const node3 = new Node(2)
 const node4 = new Node(0)
+const node5 = new Node(10)
+const node6 = new Node(20)
 
 const myLinkedList = new LinkedList(node1)
 
@@ -142,5 +153,9 @@ myLinkedList.insert(1, node4)
 console.log(myLinkedList.printList())
 myLinkedList.remove(2)
 console.log(myLinkedList.printList())
+myLinkedList.append(node5)
+myLinkedList.append(node6)
 myLinkedList.reverse()
 console.log(myLinkedList.printList())
+console.log(myLinkedList.head)
+console.log(myLinkedList.tail)
