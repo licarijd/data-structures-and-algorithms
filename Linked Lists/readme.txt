@@ -178,3 +178,17 @@ when you want good operations on searching for eleemnts (such as searching backw
 
 ** Usually in interviews, you'll be asked about implementing singly linked list
 operations. Doubly linked lists usually only come up as theory questions.
+
+
+In summary, linked lists are great because they're:
+
+- fast for insertion / deletion (unlike arrays, where all elements get shifted)
+
+- ordered 
+
+- flexible size (no overhead costs like in arrays, where we need to copy elements to new
+memory addresses when they get large)
+
+
+However, linked lists have slow lookup (since they need to be traversed, not just random
+access like hash tables or indexed like arrays). They also use more memory.
