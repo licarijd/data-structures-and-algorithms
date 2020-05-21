@@ -79,3 +79,18 @@ Queue Operations
 
 ** It's very inefficient to use arrays to implement queues - if we dequeue an item,
 all other array elements will need to be unshifted.
+
+
+** It's a common interview question / solution to implement queues
+using stacks, look up the solution on Leetcode **
+
+
+Stacks and Queues are great:
+
+- for fast operations
+- for fast peek
+- since they're ordered
+
+On the downsides, they have slow lookup (they're not used this way,
+since we can only access items at the beginning or end of the data
+structure)
