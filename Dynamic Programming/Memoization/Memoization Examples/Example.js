@@ -32,3 +32,5 @@ const memoizedAddTo80 = n => {
 
 // So essentially, memoization is simply remembering the solution to 
 // a subproblem, so you don't have to calculate it again.
+
+// ** See Improvement.js for an improvement on this method.
