@@ -24,3 +24,11 @@ const memoizedAddTo80 = n => {
         cache[n] = addTo80(n)
     }
 }
+
+// Memoization is a specific form of caching that involves caching the return value
+// of a function based on it's parameters.
+
+// If the parameter of a function hasn't changed, it's memoized.
+
+// So essentially, memoization is simply remembering the solution to 
+// a subproblem, so you don't have to calculate it again.
