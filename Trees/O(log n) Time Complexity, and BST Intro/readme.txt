@@ -43,8 +43,8 @@ log 100 = 2 because 10^2 = 100
 
 
 log n basically means that based on the height, the maximum number of
-decisions we're going to take if we search the tree (eg. to look for 
-a node) is log n.
+decisions we're going to take if we access, search, insert/delete from 
+the tree (eg. to look for a node) is log n.
 
 
 Binary Search Trees 
