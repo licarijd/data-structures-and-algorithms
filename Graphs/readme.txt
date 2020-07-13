@@ -65,3 +65,26 @@ to the same node).
 
 Cyclic Graphs are expecially common in Weighted Graphs, such as Google Maps, because most of the time, their is a way to 
 get back.
+
+
+Graphs are combinations of these:
+
+- undirected, unweighted, cyclic graphs
+
+- undirected, weighted, cyclic graphs 
+
+- directed, weighted, acyclic graphs
+
+etc...
+
+
+Directed Acyclic Graphs (DAGs) are quite common; a popular 
+blockchain project called iota uses it. 
+DAG exmaple: https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12371108#content
+
+
+Graphs are built on top of other data structures. For example,
+Trees and Linked Lists can be used to build the DAG in the 
+example in the link above.
+
+See the Graph Implementation Example
