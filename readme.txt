@@ -22,3 +22,10 @@ So if you want things to go faster, you may need more memory. And vice-versa.
 
 
 ** To easily run JS code, use repl.it: https://repl.it/@licarijd/LoneExtraneousTrialsoftware
+
+** Blockchain is a very popular data structure these days. 
+It has some aspects of Linked Lists, it has does some hashing,
+and it also uses some Trie data structures, and Trees.
+
+See https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12372714#content
+1:40 for a visual representation.
