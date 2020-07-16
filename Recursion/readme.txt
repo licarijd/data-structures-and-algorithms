@@ -73,13 +73,14 @@ Recursion Pros
 - good for cases where you don't know how many iterations you'll need; like objects 
 with unknown depth
 
-Recorsion Cons
+Recursion Cons
 
 - larger memory footprint, since every time we add a function call to the call 
-stack, it adds extra memory 
+stack, it adds extra memory (see the Fibonacci example)
 
 - iterative approaches tend to be more efficient because they don't make these function 
-calls with each iteration which take up stack space
+calls with each iteration which take up stack space (see the Fibonacci
+example)
 
 
 Tail Call Optimization
@@ -108,6 +109,10 @@ Recursion may be ideal when:
 There's a lot of divide and conquer used in recursion. Things like tree traversal
 is much simpler with recursion.
 
+
+Real World examples of recursion: https://stackoverflow.com/questions/105838/real-world-examples-of-recursion
+
+Practice Problem: https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12395678#content
 
 
 
