@@ -88,3 +88,24 @@ Trees and Linked Lists can be used to build the DAG in the
 example in the link above.
 
 See the Graph Implementation Example
+
+
+** Graphs are typically not discussed during interviews,
+since questions can take a long time to do.
+
+
+When it comes to performance and Big-O, things get complicated, 
+since there are so many different kinds of Graph.
+
+Graphs are very useful when it comes to relationships. Some data just 
+needs to be in Graph form. There are algorithms for Graphs which allow us 
+to perform operations, like finding the shortest path, or traversal.
+
+But since Graphs can become complicated, scaling is pretty hard. You need a 
+lot of resources and engineering poiwer to make sure that Graphs scale well.
+
+Most developers will never have to implement their own Graph in production.
+
+There are tools like Neo4j, which is a popular database that allows you to 
+build really fast Graph databases. Most of the time, tools like Neo4j will be 
+used to build complex structures for our data.
