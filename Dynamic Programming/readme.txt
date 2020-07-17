@@ -7,9 +7,31 @@ At a high level, dynamic programming is a way of solving problems by breaking it
 solving each of those subproblems just once, and storing their solutions in case next time the same subproblem occurs.
 
 
-Fibbonacci - see https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12409072#overview
-for an example of how the Fibonnacci problem can be solved using Dynamic Programming! 
-Everything up until 2:55.
+Fibbonacci
+
+When we solve the Fibonacci Problem from ../Recursion/Examples, the tree of 
+function calls looks like the following.
+
+
+                                        fib(7)
+
+                    fib(6)                                    fib(5)
+            
+            fib(5)            fib(3)                  fib(4)          fib(3)
+
+        fib(3)    fib(2)    fib(2)  fib(1)        fib(3)   fib(2)   fib(2)   fib(1)
+
+    fib(2)  fib(1)                            fib(2)  fib(1)  
+
+
+We can see how this problem is extremely inneficient - it has runtime complexity of O(2^n),
+exponential time. It doesn't have efficient space complexity either - there 
+are many repeated function calls (4 repeated calls from fib(1) alone!!).
+Most of the problem is repeated tasks.
+
+But, this means that Memoization drastically helps in this scenario.
+We can return a memoized version of fib(1), fib(2), and other repeated 
+tasks.
 
 
 Dynamic Programming Summary
@@ -21,7 +43,7 @@ Dynamic Programming combines 2 concepts:
 2) Memoization
 
 
-Here are some steps you can take to tell if Dynamic Programming might be beneficial:
+Here are some steps you can take to tell/take if Dynamic Programming might be beneficial:
 
 1) Can the problem be divided into subproblems?
 
@@ -35,11 +57,17 @@ Here are some steps you can take to tell if Dynamic Programming might be benefic
 
 - if so, they can be momoized
 
-4) Memoized Subproblems 
+4) Memoize the Subproblems!
 
 
 Bottom-Up Approach
 
-See https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12409092#overview
-at 1:43
+See /Memoization Examples/Fibbonacci with Bottom-Up Approach
 
+This is another way to solve the Fibonacci problem with Momoization.
+The method we've used thus far in /Memoization Examples/Fibbonacci with
+Dynamic Programming uses Top-Down Approach. It is very unlikely that an interviewer
+will ask you to implement both!
+
+
+** Popular Dynamic Programming practice questions: https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12409090#content

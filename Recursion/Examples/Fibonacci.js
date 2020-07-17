@@ -10,7 +10,7 @@
 // 3:45 for a visual representation of the call tree for the recursive solution!
 
 
-// Big-O: O(n^2)
+// Big-O: O(2^n)
 // The size of the tree exponentially grows with n (see the link above)
 const fibonacciRecursive = n => {
 
@@ -42,11 +42,12 @@ console.log(fibonacciRecursive(8))
 console.log(fibonacciIterative(8))
 
 
-// Exponential Time O(n^2)
+// Exponential Time O(2^n)
 
 // - can be seen in recursive algorithms that solve a problem of size n
 
 // - it's extremely slow, the recursive solution shouldn't be used
 
 // - solutions like the recursive fibonnaci can be improved to O(n) using
-// Dynamic Programming and Memoization
+// Dynamic Programming and Memoization (see Dynamic Programming/
+// Memoization Examples/Fibonacci with Dynamic Programming)
