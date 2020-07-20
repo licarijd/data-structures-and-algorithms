@@ -76,3 +76,7 @@ about worst case time complexity, and not worried about memory (space complexity
 Use Quicksort when average case performance matters more than worst case performance.
 
 Insertion sort is good for small or nearly sorted input.
+
+
+Details on the sorting algorithms and their time/space complexities can be found
+here: https://www.bigocheatsheet.com/
