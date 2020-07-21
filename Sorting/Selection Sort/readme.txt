@@ -51,4 +51,4 @@ so we move 0 to the front of the list
 
 
 Next, the algorithm starts at index 1, and repeats for every index of the list
-( very inefficient O(n^2) algorithm)
+(very inefficient O(n^2) algorithm)
