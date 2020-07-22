@@ -32,7 +32,9 @@ We keep searching until we find the node we're looking for, or the tree ends.
 
 ** BFS uses additional memory (it's necessary to track the child nodes
 of each node on a given level, while traversing that level). We need to 
-track every node and it's children in order.
+track every node and it's children in order, so that once we get to the 
+end of the level, we go baack to the beginning and visit the children nodes 
+of the first node, second node, third node etc.
 
 
 Depth-First Search 
@@ -98,11 +100,13 @@ so the Big O is O(n).
 
 BFS is very good for finding the shortest path between a starting point 
 and any ohter reachable node. This is because we always start with the root 
-node, and then search the cloest node first, before moving further and 
-further. This will become apparent in an upcoming section about graph
-traversal.
+node, and then search the closest nodes first, before moving further and 
+further.
 
-The downside of BFS is that it requires more memory than DFS.
+The downside of BFS is that it requires more memory than DFS. This is 
+because once we get to the end of a level, we need to go back to the 
+beginning of the level, and visit each node's children. So, a record 
+of each node's children needs to be kept.
 
 As a general rule of thumb - if you have additional information on the 
 location of the target node, and you know that the node is likely in an 
