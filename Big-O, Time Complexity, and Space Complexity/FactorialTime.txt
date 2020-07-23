@@ -1,7 +1,0 @@
-Factorial Time - O(!n)
-
-- will likely never encounter
-
-- should never be used
-
-- means that we're adding a nested loop for every element of the input we have
