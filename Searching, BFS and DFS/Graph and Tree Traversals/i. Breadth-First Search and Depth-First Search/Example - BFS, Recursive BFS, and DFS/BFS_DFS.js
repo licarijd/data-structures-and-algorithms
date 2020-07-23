@@ -225,7 +225,104 @@ class Node {
 
       return this.breadthFirstSearchRecursive(queue, list)
     }
+
+    // Most of the time, DFS is implemented with recursion
+    DFSInOrder() {
+
+      return traverseInOrder(this.root, [])
+    }
+
+    DFSPostOrder() {
+
+      return traversePostOrder(this.root, [])
+    }
+
+    DFSPreOrder() {
+
+      return traversePreOrder(this.root, [])
+    }
   }
+
+  const traverseInOrder = (node, list) => {
+
+    console.log(node.value)
+
+    // To get all elements in order, we need to traverse all the 
+    // way down to the leftmost node of the tree (this set of 
+    // calls get added to the call stack)
+    if (node.left) {
+
+      traverseInOrder(node.left, list)
+    }
+
+    // If there are no more left nodes, push the current node
+    list.push(node.value)
+
+    // After each left node's recursive function call, it's right 
+    // child's recursive call will be added to the call stack
+    if (node.right) {
+
+      traverseInOrder(node.right, list)
+    }
+
+    return list
+  }
+  
+  // Now that we've implemented traverseInOrder, these next two become 
+  // very straightforward.
+  const traversePreOrder = (node, list) => {
+
+    console.log(node.value)
+
+    // We want to push at the beginning, before we get to the leftmost 
+    // node (starting with the root). The push happens before we move on to
+    // the next node. Now, we can see how this would be very useful to 
+    // recreate a tree!!
+
+    // ***And, notice that in pre-order, we pre-push the node!!!
+    list.push(node.value)
+
+    if (node.left) {
+
+      traversePreOrder(node.left, list)
+    }
+    
+    if (node.right) {
+
+      traversePreOrder(node.right, list)
+    }
+
+    return list
+  }
+
+  const traversePostOrder = (node, list) => {
+
+    if (node.left) {
+
+      traversePostOrder(node.left, list)
+    }
+    
+    if (node.right) {
+
+      traversePostOrder(node.right, list)
+    }
+
+    // In post-order, we post-push the node!!! Since we want to visit 
+    // both children first, before the parent.
+    console.log(node.value)
+
+    list.push(node.value)
+
+    return list
+  }
+
+
+  // ** Notice that with DFS, we know the amount of space we need in memory 
+  // from the height of the tree; since the height of the tree will match
+  // the deepest recursive function, which will be added to the call stack.
+
+  // So, our memory consumption is O(height of the tree), which will give us the 
+  // worst case scenario when using DFS.
   
   const tree = new BinarySearchTree();
   tree.insert(9)
@@ -235,8 +332,13 @@ class Node {
   tree.insert(170)
   tree.insert(15)
   tree.insert(1)
+
   console.log(tree.breadthFirstSearch())
   console.log(tree.breadthFirstSearchRecursive([ tree.root ], []))
+
+  console.log(tree.DFSInOrder())
+  console.log(tree.DFSPreOrder())
+  console.log(tree.DFSPostOrder())
   
   //     9
   //  4     20
