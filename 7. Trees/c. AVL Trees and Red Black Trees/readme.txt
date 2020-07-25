@@ -99,3 +99,6 @@ Animation: https://www.cs.usfca.edu/~galles/visualization/RedBlack.html
 
 How It Works: https://medium.com/basecs/painting-nodes-black-with-red-black-trees-60eacb2be9a5
 
+
+** B- Trees are also self-balancing. Read about them more in the "Extras - B- Trees,
+B+ Trees, and Indexing" section!
