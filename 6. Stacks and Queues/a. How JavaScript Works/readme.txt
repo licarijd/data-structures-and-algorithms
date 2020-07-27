@@ -186,7 +186,9 @@ was run from the Call Stack. So the result is:
 
 So interestingly, using a setTimeout of 0 seconds yields the same result, since the callback first gets delegated to 
 the Web API and pushed to the Callback Queue, then Event Loop, and finally the Call Stack. By the time that all happens,
-console.log(3) has already run.
+console.log(3) has already run. Also, the Event Loop only runs and adds the result from the Web API 
+to the Call Stack once the Call Stack is empty. So, we have to work through everything on the Call Stack 
+first.
 
 
 So essentially, asynchronous programming in JavaScript involves delegating operations to a Web API, which
