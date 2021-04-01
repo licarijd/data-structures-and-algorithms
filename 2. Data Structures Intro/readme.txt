@@ -37,7 +37,7 @@ That's why it's called Random Access Memory - we can access the bits at any rand
 address in memory right away.
 
 Programs usually store data in nearby memory addresses, since retrieving data 
-from addresses that are closeby if faster.
+from addresses that are closeby is faster.
 
 The CPU also has a Cache - a tiny memory storage mechanism that stores data which 
 was used very recently. A common one is called a LRU Cache.
@@ -68,7 +68,7 @@ Operations on Data Structures
 
 - Traversal (access each data item exactly once so that it can be processed)
 
-- Searching (find the location of a data item if it exists in a give collection)
+- Searching (find the location of a data item if it exists in a given collection)
 
 - Sorting
 
