@@ -35,7 +35,7 @@ Arrays are great:
 
 - for fast lookups
 - because of fast push/pop() (adding elements to the end, taking things out of the end of the array)
-- elements are ordered and stored sequentially in memory
+- because elements are ordered and stored sequentially in memory
 
 
 Arrays aren't great for:
