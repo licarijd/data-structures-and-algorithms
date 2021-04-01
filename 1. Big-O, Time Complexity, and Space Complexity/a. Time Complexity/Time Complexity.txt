@@ -73,7 +73,7 @@ Drop Non-Dominant Terms:
 
 - Smaller terms become less relevent as input grows
 
-- For example, for O(n^3 + 5n + 100), the 3^n is the only term which will
+- For example, for O(n^3 + 5n + 100), the n^3 is the only term which will
 have a significant impact on runtime as n grows 
 
 - So, we would discard 5n and 100
@@ -85,7 +85,7 @@ have a significant impact on runtime as n grows
 
 ** Two seperate collections in order: O(n + m)
 
-** Two seperate nested collections in order: O(n + m) - this is expressed as O(n^2)
+** Two nested collections: O(n * m) - this is expressed as O(n^2)
 if both loops are based on the same collection 
 
 ** The number of inputs determines the term.
