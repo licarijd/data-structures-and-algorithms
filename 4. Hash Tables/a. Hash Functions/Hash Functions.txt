@@ -1,7 +1,7 @@
 Hash Functions are used all across computer science.
 
 
-A hash function is a function which generates a value of fixed for each input
+A hash function is a function which generates a value of fixed length for each input
 that it gets.
 
 For example, md5 is a type of hash function (there are many, such as SHA1, 
